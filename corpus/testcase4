@@ -1,0 +1,20 @@
+0b          template
+00          array     -- start prop names
+0302        int, 2    -- two prop names
+02          string    -- first prop "name"
+0304        int, 4
+6e616d65    "name"
+02          string    -- 2nd prop "age"
+0303        int, 3
+616765      "age"
+0303        int, 3    -- there are 3 objects
+02          string    -- object 1, prop 1 name=fred
+0304        int, 4
+66726564    "fred"
+0314        int 0x14  -- object 1, prop 2 age=20
+02          string    -- object 2, prop 1 name=pete
+0304        int 4
+70657465    "pete"
+031e        int, 0x1e -- object 2, prop 2 age=30
+0c          skip      -- object 3, prop 1, not set
+0319        int, 0x19 -- object 3, prop 2 age=25
