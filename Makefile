@@ -7,8 +7,8 @@ FOLLY=/root/proxygen/proxygen/folly
 all: Fuzzer
 
 clean:
-        rm -rf Fuzzer
+	rm -rf Fuzzer
 
 Fuzzer: fuzzer.cpp
 
-        $(CXX) -o fuzzer fuzzer.cpp -I$(FOLLY)/include $(FOLLY)/_build/libfolly.so -fsanitize=fuzzer,undefined,address -g -fsanitize=fuzzer,address -lfolly -lboost_system -lglog
+	$(CXX) -o fuzzer fuzzer.cpp -I$(FOLLY)/include $(FOLLY)/_build/libfolly.so -g -fsanitize=fuzzer,undefined -lfolly -lboost_system -lglog
