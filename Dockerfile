@@ -11,8 +11,8 @@ RUN apt-key add key
 RUN apt-get update
 RUN apt-get --yes install clang-6.0 lldb-6.0 lld-6.0 libfuzzer-6.0-dev
 
-ENV CC clang-6.0
-ENV CXX clang++-6.0
+ENV CC clang-7
+ENV CXX clang++-7
 
 RUN apt-get install --yes g++     cmake     libboost-all-dev     libevent-dev     libdouble-conversion-dev     libgoogle-glog-dev     libgflags-dev     libiberty-dev     liblz4-dev     liblzma-dev     libsnappy-dev     make     zlib1g-dev     binutils-dev     libjemalloc-dev     libssl-dev     pkg-config     libsodium-dev
 
