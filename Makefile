@@ -10,4 +10,4 @@ clean:
 	rm -rf Fuzzer
 
 Fuzzer: fuzzer.cpp
-	$(CXX) -o fuzzer fuzzer.cpp -I$(FOLLY)/include $(FOLLY)/_build/libfolly.so -ggdb -fsanitize=fuzzer,undefined -fsanitize-recover=address -lfolly -lboost_system -lglog
+	$(CXX) -o bserfuzzer fuzzer.cpp -I$(FOLLY)/include $(FOLLY)/_build/libfolly.so -ggdb -fsanitize=fuzzer,undefined -fsanitize-recover=address -lfolly -lboost_system -lglog
