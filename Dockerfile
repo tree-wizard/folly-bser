@@ -9,7 +9,7 @@ RUN apt-get --yes install wget vim git tree gnupg1 zlib1g-dev make
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key > key 
 RUN apt-key add key
 RUN apt-get update
-RUN apt-get --yes install clang-6.0 lldb-6.0 lld-6.0 libfuzzer-6.0-dev
+RUN apt-get --yes install clang-7 lldb-7 lld-7 libfuzzer-7-dev
 
 ENV CC clang-7
 ENV CXX clang++-7
