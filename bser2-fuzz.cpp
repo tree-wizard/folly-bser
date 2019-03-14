@@ -3,7 +3,7 @@
 
 extern "C" int LLVMFuzzerTestOneInput(const char *data, size_t Size) {
 
-    folly::fbstring str;
+    folly::StringPiece str;
     folly::bser::serialization_opts opts;
   //std::string inputStr(data);
 
